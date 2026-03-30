@@ -1,9 +1,14 @@
-import Register from "./pages/Register";
+import React from "react";
+import AdminUsers from "./components/AdminUsers";
+import AdminBooks from "./components/AdminBooks";
 
 function App() {
   return (
     <div>
-      <Register />
+      <h1>Dashboard Admin</h1>
+      <AdminUsers />
+      <hr />
+      <AdminBooks />
     </div>
   );
 }
