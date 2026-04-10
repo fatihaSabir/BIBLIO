@@ -1,7 +1,3 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', fn() => response()->json(['status'=>'ok','app'=>'Bibliotheque API']));
